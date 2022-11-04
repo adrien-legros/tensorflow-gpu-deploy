@@ -1,0 +1,12 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDashboard
+metadata:
+  labels:
+    app: grafana
+  name: pod-ressource-k8s
+  namespace: grafana
+spec:
+  configMapRef:
+    key: k8s-resources-pod.json
+    name: grafana-dashboard-k8s-resources-pod
+

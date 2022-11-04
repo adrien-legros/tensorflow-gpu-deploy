@@ -1,0 +1,12 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDashboard
+metadata:
+  labels:
+    app: grafana
+  name: nvidia-dcgm
+  namespace: grafana
+spec:
+  configMapRef:
+    key: dashboard.json
+    name: nvidia-dcgm
+
